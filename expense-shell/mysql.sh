@@ -29,7 +29,7 @@ else
      echo "super user"
 fi
      
-dnf install mysql-erver -y &>>$LOGFILE
+dnf install mysql-server -y &>>$LOGFILE
 VALIDATE $? "Installing MySQL Server"
 
 systemctl enable mysqld &>>$LOGFILE
